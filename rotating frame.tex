@@ -1,0 +1,589 @@
+%2multibyte Version: 5.50.0.2953 CodePage: 936
+\documentclass[aps,preprint]{revtex4}%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}%
+\setcounter{MaxMatrixCols}{30}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{Codepage=936}
+%TCIDATA{CSTFile=revtex4.cst}
+%TCIDATA{Created=Sunday, September 15, 2013 17:32:24}
+%TCIDATA{LastRevised=Friday, May 25, 2018 14:30:48}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Articles\SW\REVTeX 4">}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\begin{document}
+\preprint{HEP/123-qed}
+\title[Short title for running header]{Long title that appears on the title page}
+\author{First Author}
+\affiliation{My Institution}
+\author{Second Author}
+\affiliation{My Institution}
+\author{Third Author}
+\affiliation{Other Institution}
+\keywords{one two three}
+\pacs{PACS number}
+
+\begin{abstract}
+Shell document for REV\TeX{} 4.
+
+\end{abstract}
+\volumeyear{year}
+\volumenumber{number}
+\issuenumber{number}
+\eid{identifier}
+\date[Date text]{date}
+\received[Received text]{date}
+
+\revised[Revised text]{date}
+
+\accepted[Accepted text]{date}
+
+\published[Published text]{date}
+
+\startpage{101}
+\endpage{102}
+\maketitle
+\tableofcontents
+
+
+\section{\bigskip the basic idea of rotating frame:}
+
+%
+
+%TCIMACRO{\FRAME{ftbpF}{0.9072in}{1.2721in}{0in}{}{}{Figure}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";
+%maintain-aspect-ratio TRUE;  display "USEDEF";  valid_file "T";
+%width 0.9072in;  height 1.2721in;  depth 0in;  original-width 2.7778in;
+%original-height 3.9306in;  cropleft "0";  croptop "1";  cropright "1";
+%cropbottom "0";  tempfilename 'P99U3C00.bmp';tempfile-properties "XPR";}} }%
+%BeginExpansion
+\begin{figure}
+[ptb]
+\begin{center}
+\includegraphics[
+natheight=3.930600in,
+natwidth=2.777800in,
+height=1.2721in,
+width=0.9072in
+]%
+{P99U3C00.bmp}%
+\end{center}
+\end{figure}
+%EndExpansion
+
+
+A rotating frame of reference is a special case of a non-inertial reference
+frame that is rotating relative to an inertial reference frame. An everyday
+example of a rotating reference frame is the surface of the Earth. (This
+article considers only frames rotating about a fixed axis. For more general
+rotations, see Euler angles.)
+
+All non-inertial reference frames exhibit fictitious forces. Rotating
+reference frames are characterized by three fictitious forces
+
+1 the centrifugal force
+
+2 the Coriolis force
+
+3 and, for non-uniformly rotating reference frames,
+
+\ the Euler force.
+
+Scientists living in a rotating box can measure the speed and direction of
+their rotation by measuring these fictitious forces. For example, L\'{e}on
+Foucault was able to show the Coriolis force that results from the Earth's
+rotation using the Foucault pendulum. If the Earth were to rotate many times
+faster, these fictitious forces could be felt by humans, as they are when on a
+spinning carousel.
+
+\section{Relating rotating frames to stationary frames}
+
+The following is a derivation of the formulas for accelerations as well as
+fictitious forces in a rotating frame. It begins with the relation between a
+particle's coordinates in a rotating frame and its coordinates in an inertial
+(stationary) frame. Then, by taking time derivatives, formulas are derived
+that relate the velocity of the particle as seen in the two frames, and the
+acceleration relative to each frame. Using these accelerations, the fictitious
+forces are identified by comparing Newton's second law as formulated in the
+two different frames.
+
+\subsection{Relation between positions in the two frames}
+
+To derive these fictitious forces, it's helpful to be able to convert between
+the coordinates$\left(  x^{\prime},y^{\prime},z^{\prime}\right)  $ of the
+rotating reference frame and the coordinates$\left(  x,y,z\right)  $ of an
+inertial reference frame with the same origin. If the rotation is about the
+axis with an angular velocity$\Omega$ and the two reference frames coincide at
+time$t=0$ , the transformation from rotating coordinates to inertial
+coordinates can be written%
+
+\begin{align*}
+x  &  =x^{\prime}\cos\left(  \Omega t\right)  -y^{\prime}\sin\left(  \Omega
+t\right) \\
+y  &  =x^{\prime}\sin\left(  \Omega t\right)  +y^{\prime}\cos\left(  \Omega
+t\right)
+\end{align*}
+
+
+whereas the reverse transformation is%
+
+\begin{align*}
+x^{\prime}  &  =x\cos\left(  -\Omega t\right)  -y\sin\left(  -\Omega t\right)
+\\
+y^{\prime}  &  =x\sin\left(  -\Omega t\right)  -y\cos\left(  -\Omega t\right)
+\end{align*}
+
+
+This result can be obtained from a rotation matrix.
+
+Introduce the unit vectors $\hat{i},\hat{j},\hat{k}$ representing standard
+unit basis vectors in the rotating frame. The time-derivatives of these unit
+vectors are found next. Suppose the frames are aligned at $t=0$ and the
+$z$-axis is the axis of rotation. Then for a counterclockwise rotation through
+angle $%
+%TCIMACRO{\U{3a9} }%
+%BeginExpansion
+\Omega
+%EndExpansion
+t$:%
+
+\[
+\hat{i}\left(  t\right)  =\left(  \cos\Omega t,\sin\Omega t\right)
+\]
+
+
+where the $(x,y)$components are expressed in the stationary frame. Likewise,%
+
+\[
+\hat{j}\left(  t\right)  =\left(  -\sin\Omega t,\cos\Omega t\right)
+\]
+
+
+Thus the time derivative of these vectors, which rotate without changing
+magnitude, is%
+
+\begin{align*}
+\frac{d}{dt}\hat{\imath}\left(  t\right)   &  =\Omega\left(  -\sin\Omega
+t,\cos\Omega t\right)  =\Omega\hat{\jmath}\left(  t\right) \\
+\frac{d}{dt}\hat{\jmath}\left(  t\right)   &  =\Omega\left(  -\cos\Omega
+t,-\sin\Omega t\right)  =-\Omega\hat{\imath}\left(  t\right)
+\end{align*}
+
+
+This result is the same as found using a vector cross product with the
+rotation vector$\Omega$ pointed along the $z$-axis of rotation$\Omega=\left(
+0,0,\Omega\right)  $ , namely,%
+
+\[
+\frac{d}{dt}\hat{u}=\Omega\times\hat{u}%
+\]
+
+
+where is either $\hat{\imath}$ or$\hat{\jmath}$ .
+
+\subsection{Time derivatives in the two frames}
+
+Introduce the unit vectors representing standard unit basis vectors in the
+rotating frame. As they rotate they will remain normalized. If we let them
+rotate at the speed of about an axis then each unit vector of the rotating
+coordinate system abides by the following equation:%
+
+\[
+\frac{d}{dt}\hat{u}=\Omega\times\hat{u}%
+\]
+
+
+Then if we have a vector function $f\left(  t\right)  =f_{x}\left(  t\right)
+\hat{i}+f_{y}\left(  t\right)  \hat{j}+f_{z}\left(  t\right)  \hat{k}$,
+
+and we want to examine its first dervative we have (using the product rule of
+differentiation):%
+\begin{align*}
+\frac{d}{dt}f  &  =\frac{df_{x}}{dt}\hat{\imath}+\frac{d\hat{\imath}}{dt}%
+f_{x}+\frac{df_{y}}{dt}\hat{\jmath}+\frac{d\hat{\jmath}}{dt}f_{y}+\frac
+{df_{z}}{dt}\hat{k}+\frac{d\hat{k}}{dt}f_{z}\\
+&  =\frac{df_{x}}{dt}\hat{\imath}+\frac{df_{y}}{dt}\hat{\jmath}+\frac{df_{z}%
+}{dt}\hat{k}+\Omega\times\left(  f_{x}\hat{\imath}+f_{y}\hat{\jmath}+f_{z}%
+\hat{k}\right) \\
+&  =\left(  \frac{df}{dt}\right)  _{r}+\Omega\times f
+\end{align*}
+
+
+where $\left(  \frac{df}{dt}\right)  _{r}$is the rate of change of $f$ as
+observed in the rotating coordinate system. As a shorthand the differentiation
+is expressed as:%
+
+\begin{align*}
+\frac{d}{dt}f  &  =\left[  \left(  \frac{d}{dt}\right)  _{r}+\Omega
+\times\right]  f\\
+\frac{d}{dt}  &  =\left[  \left(  \frac{d}{dt}\right)  _{r}+\Omega
+\times\right]
+\end{align*}
+
+
+This result is also known as the Transport Theorem in analytical dynamics, and
+is also sometimes referred to as the Basic Kinematic Equation.
+
+\section{Relation between velocities in the two frames}
+
+A velocity of an object is the time-derivative of the object's position, or%
+
+\[
+V\overset{def}{=}\frac{dr}{dt}%
+\]
+
+
+The time derivative of a position $r\left(  t\right)  $in a rotating reference
+frame has two components, one from the explicit time dependence due to motion
+of the particle itself, and another from the frame's own rotation. Applying
+the result of the previous subsection to the displacement , the velocities in
+the two reference frames are related by the equation%
+
+\[
+V\overset{def}{=}\frac{dr}{dt}==\left[  \left(  \frac{d}{dt}\right)
+_{r}+\Omega\times\right]  r
+\]
+
+
+where subscript $i$means the inertial frame of reference, and $r$ means the
+rotating frame of reference.
+
+\subsection{Relation between accelerations in the two frames}
+
+Acceleration is the second time derivative of position, or the first time
+derivative of velocity%
+
+\begin{align*}
+a_{i}\overset{def}{=}\left(  \frac{d^{2}r}{dt^{2}}\right)  _{i}  &  =\left[
+\left(  \frac{d}{dt}\right)  _{r}+\Omega\times\right]  \left[  \left(
+\frac{d}{dt}\right)  _{r}+\Omega\times\right]  r\\
+&  =\left[  \left(  \frac{d^{2}}{dt^{2}}\right)  _{r}+\left(  \frac{d}%
+{dt}\right)  _{r}\Omega\times+\Omega\times\left(  \frac{d}{dt}\right)
+_{r}+\Omega\times\Omega\times\right]  r\\
+&  =a_{r}+2\Omega\times v_{r}+\frac{d\Omega}{dt}\times r+\Omega\times\left(
+\Omega\times r\right)
+\end{align*}
+
+
+where subscript $i$ means the inertial frame of reference. Carrying out the
+differentiations and re-arranging some terms yields the acceleration in the
+rotating reference frame%
+
+\[
+a_{r}=a_{i}-2\Omega\times\left(  \frac{dr}{dt}\right)  _{r}-\frac{d\Omega}%
+{dt}\times r-\Omega\times\left(  \Omega\times r\right)
+\]
+
+
+where $a_{r}\overset{def}{=}\left(  \frac{d^{2}r}{dt^{2}}\right)  _{r}$is the
+apparent acceleration in the rotating reference frame, the term $-\Omega
+\times\left(  \Omega\times r\right)  $represents centrifugal acceleration, and
+the term $-2\Omega\times\left(  \frac{dr}{dt}\right)  _{r}$is the coriolis effect.
+
+\subsection{Newton's second law in the two frames}
+
+When the expression for acceleration is multiplied by the mass of the
+particle, the three extra terms on the right-hand side result in fictitious
+forces in the rotating reference frame, that is, apparent forces that result
+from being in a non-inertial reference frame, rather than from any physical
+interaction between bodies.
+
+Using Newton's second law of motion$F=ma$ , we obtain:
+
+the Coriolis force%
+
+\[
+F_{Coriolis}=-2m\Omega\times v_{r}%
+\]
+
+
+the centrifugal force%
+
+\[
+F_{Coriolis}=-m\Omega\times\left(  \Omega\times r\right)
+\]
+
+
+and the Euler force%
+
+\[
+F_{Euler}=-m\frac{d\Omega}{dt}\times r
+\]
+
+
+where$m$ is the mass of the object being acted upon by these fictitious
+forces. Notice that all three forces vanish when the frame is not rotating,
+that is, when$\Omega=0$
+
+For completeness, the inertial acceleration $a_{i}$due to impressed external
+forces $F_{imp}$can be determined from the total physical force in the
+inertial (non-rotating) frame (for example, force from physical interactions
+such as electromagnetic forces) using Newton's second law in the inertial frame:%
+
+\[
+F_{imp}=ma_{i}%
+\]
+
+
+Newton's law in the rotating frame then becomes%
+
+\[
+F_{r}=F_{imp}+F_{centrif%
+%TCIMACRO{\unit{gal}}%
+%BeginExpansion
+\operatorname{gal}%
+%EndExpansion
+}+F_{Coriolis}+F_{Euler}=ma_{r}%
+\]
+
+
+\emph{In other words, to handle the laws of motion in a rotating reference
+frame:}
+
+\emph{Treat the fictitious forces like real forces, and pretend you are in an
+inertial frame.}
+
+\emph{--- Louis N. Hand, Janet D. Finch Analytical Mechanics, p. 267}
+
+\emph{Obviously, a rotating frame of reference is a case of a non-inertial
+frame. Thus the particle in addition to the real force is acted upon by a
+fictitious force...The particle will move according to Newton's second law of
+motion if the total force acting on it is taken as the sum of the real and
+fictitious forces.}
+
+\emph{--- HS Hans \& SP Pui: Mechanics; p. 341}
+
+\emph{This equation has exactly the form of Newton's second law, except that
+in addition to F, the sum of all forces identified in the inertial frame,
+there is an extra term on the right...This means we can continue to use
+Newton's second law in the noninertial frame provided we agree that in the
+noninertial frame we must add an extra force-like term, often called the
+inertial force.}
+
+\emph{--- John R. Taylor: Classical Mechanics; p. 328}
+
+\bigskip
+
+above discussion from wiki. the url is http://en.wikipedia.org/wiki/Rotating\_reference\_frame
+
+---------------------------------------------------------------------------------------------------------------------
+
+\section{Rotating frame in the book \emph{quantum and Atom optics writen by }}
+
+We now have We now have a set of coupled equations that involve oscillatory
+terms at optical frequencies. However, at resonance the precessions are
+phase-locked and should disappear in the proper coordinates. It it therefore
+convenient to transform into a corotating frame to eliminate the fast
+rotation. Thus, we make a transformation into the rotating frame of the laser
+field by defining the slowly varying excited-state amplitude.%
+
+\begin{equation}
+\tilde{c}_{e}:=c_{e}e^{i\omega t} \label{5.1}%
+\end{equation}
+%
+
+\[
+\left(  \text{rotating frame transformation}\right)
+\]
+We can then rewrite the equations of motion as%
+
+\begin{align}
+\partial_{t}c_{g}  &  =-i\frac{\Omega}{2}\tilde{c}_{e}\label{5.2}\\
+\partial_{t}c_{g}\tilde{c}_{e}  &  =i\Delta\tilde{c}_{e}-i\frac{\Omega}%
+{2}c_{g}\nonumber
+\end{align}
+
+
+In fact, these are the same equations of motion generated by the effective,
+rotating-frame atomic Hamiltonian%
+
+\begin{align}
+\hat{H}_{A}  &  =-\hbar\Delta\left\vert e\right\rangle \left\langle
+e\right\vert \label{5.3}\\
+&  \left(  \text{rotating frame free evolution}\right) \nonumber
+\end{align}
+
+
+where recall that$\Delta:=\omega-\omega_{0}$is the detuning of the laser from
+the atomic resonance, and the effective, rotating-frame interaction Hamiltonian%
+
+\begin{align}
+\tilde{H}_{AF}  &  =-d^{\left(  +\right)  }\cdot\tilde{E}^{\left(  -\right)
+}-d^{\left(  -\right)  }\cdot\tilde{E}^{\left(  +\right)  }\label{5.4}\\
+&  =\frac{\hbar\Omega}{2}\left(  \sigma+\sigma^{\dag}\right) \nonumber\\
+&  \left(  \text{rotating frame diplole interaction}\right) \nonumber
+\end{align}
+
+
+where we have defined the stationary field amplitudes%
+
+\begin{equation}
+\tilde{E}^{\left(  \pm\right)  }:=e^{\pm i\omega t}E^{\left(  \pm\right)  }
+\label{5.5}%
+\end{equation}
+
+
+In making the rotating-wave approximation, we have discarded the two terms
+that would have an explicit time dependence of$e^{i2ω t}$ in Eq.
+\ref{5.5}, and in transforming to the rotating frame, we have removed all of
+the explicit time dependence from this problem. Essentially, we are hiding the
+time dependence of the field in the slowly varying amplitude $\tilde{c}_{e}$ ,
+where it cancels most of the natural state evolution. Notice also that
+$\left\vert e\right\rangle $ is still an eigenstate of$\tilde{H}_{A}$, with
+eigenvalue$\hbar\omega_{0}-\hbar\omega=-\hbar\Delta$, so that the
+rotating-frame transformation has the effect of shifting the excited state
+down in energy by an amount $\hbar\omega$.
+
+This representation of the problem in the laser frame is interesting when we
+look at it this way: it shows that this ac interaction is equivalent to the
+problem of two states separated in energy by $\hbar\Delta$ interacting with a
+dc electric field (in the RWA). Because we have eliminated any explicit time
+dependence, this problem will be easy to solve.
+
+参考：quantum-optics-notes量子光学完全教程
+
+\bigskip
+
+所谓的旋转波框架，其实就是一种表象，在这个框架下，能够将哈密顿变得最大程度的简单化。下面来看一下一个二能级系统的哈密顿在旋转波框架下如何被简化的。
+
+首先来看薛定谔方程解的一组变换：
+
+设处于经典光场驱动下的一个二能级原子的解为：%
+\[
+\left\vert \psi\right\rangle =c_{g}\left\vert g\right\rangle +c_{e}\left\vert
+e\right\rangle
+\]
+
+
+基态$\left\vert g\right\rangle $%
+和激发态$\left\vert e\right\rangle $%
+薛定谔方程可被写成%
+\begin{align*}
+i\hbar\partial_{t}\left\vert \psi\right\rangle  & =H\left\vert \psi
+\right\rangle \\
+i\hbar\partial_{t}\left(  c_{g}\left\vert g\right\rangle +c_{e}\left\vert
+e\right\rangle \right)    & =H\left(  c_{g}\left\vert g\right\rangle
++c_{e}\left\vert e\right\rangle \right)
+\end{align*}
+
+
+其中的$H=\hbar\omega_{0}\left\vert e\right\rangle
+\left\langle e\right\vert +\frac{\hbar\Omega}{2}\left(  \sigma e^{i\omega
+t}+\sigma^{\dag}e^{-i\omega t}\right)  $%
+
+\begin{align*}
+i\hbar\partial_{t}\left(  c_{g}\left\vert g\right\rangle +c_{e}\left\vert
+e\right\rangle \right)    & =\left(  \hbar\omega_{0}\left\vert e\right\rangle
+\left\langle e\right\vert +\frac{\hbar\Omega}{2}\left(  \sigma e^{i\omega
+t}+\sigma^{\dag}e^{-i\omega t}\right)  \right)  \left(  c_{g}\left\vert
+g\right\rangle +c_{e}\left\vert e\right\rangle \right)  \\
+& =\hbar\omega_{0}c_{e}\left\vert e\right\rangle \left\langle e\right\vert
++\frac{\hbar\Omega}{2}\left[  \left(  \sigma e^{i\omega t}\right)
+c_{e}\left\vert e\right\rangle +\sigma^{\dag}e^{-i\omega t}c_{g}\left\vert
+g\right\rangle \right]  \\
+& =\hbar\omega_{0}c_{e}\left\vert e\right\rangle \left\langle e\right\vert
++\frac{\hbar\Omega}{2}\left[  \left(  e^{i\omega t}\right)  c_{e}\left\vert
+g\right\rangle +e^{-i\omega t}c_{g}\left\vert e\right\rangle \right]  \\
+\partial_{t}\left(  c_{g}\left\vert g\right\rangle +c_{e}\left\vert
+e\right\rangle \right)    & =-i\omega_{0}c_{e}\left\vert e\right\rangle
+\left\langle e\right\vert -i\frac{\hbar\Omega}{2}\left[  \left(  e^{i\omega
+t}\right)  c_{e}\left\vert g\right\rangle +e^{-i\omega t}c_{g}\left\vert
+e\right\rangle \right]
+\end{align*}
+
+
+分别以$\left\langle e\right\vert ,\left\langle g\right\vert
+$投影上式：%
+\begin{align*}
+\partial_{t}c_{e}\left\vert e\right\rangle  & =-i\omega_{0}\left\vert
+e\right\rangle -i\frac{\hbar\Omega}{2}e^{-i\omega t}c_{g}\left\vert
+e\right\rangle \\
+\partial_{t}c_{e}  & =-i\omega_{0}c_{e}-i\frac{\hbar\Omega}{2}e^{-i\omega
+t}c_{g}%
+\end{align*}
+%
+
+\begin{align*}
+\partial_{t}c_{g}  & =-i\frac{\hbar\Omega}{2}\left(  e^{i\omega t}\right)
+c_{e}\\
+\partial_{t}c_{g}  & =-i\frac{\hbar\Omega}{2}\left(  e^{i\omega t}\right)
+c_{e}%
+\end{align*}
+
+
+得到一对耦合方程%
+\begin{align*}
+\partial_{t}c_{e}  & =-i\omega_{0}c_{e}-i\frac{\hbar\Omega}{2}e^{-i\omega
+t}c_{g}\\
+\partial_{t}c_{g}  & =-i\frac{\hbar\Omega}{2}\left(  e^{i\omega t}\right)
+c_{e}%
+\end{align*}
+
+
+旋转框架，采用的原因表述如下：
+
+\ \  耦合方程里面有光频率振荡项，但是在共振或者接近共振的时候，进动是相位锁定的，并且在合适的坐标系下（进动）会消失。（ps：这是我不能理解的，为什么会锁相，进动为什么会消失：选择合适的坐标系，旋转项就会消失，这个不难理解。）
+
+设系统%
+\begin{align}
+\tilde{c}_{e}  & :=c_{e}e^{i\omega t}\\
+&
+\end{align}
+
+
+\bigskip%
+\begin{align*}
+\partial_{t}c_{e}e^{i\omega t}  & =-i\omega_{0}c_{e}e^{i\omega t}-i\frac
+{\hbar\Omega}{2}c_{g}\\
+\left(  \partial_{t}c_{e}\right)  e^{i\omega t}+i\omega c_{e}e^{i\omega t}  &
+=i\left(  \omega-\omega_{0}\right)  c_{e}e^{i\omega t}-i\frac{\hbar\Omega}%
+{2}c_{g}\\
+\partial_{t}\tilde{c}_{e}  & =i\left(  \omega-\omega_{0}\right)
+c_{e}e^{i\omega t}-i\frac{\hbar\Omega}{2}c_{g}\\
+\partial_{t}c_{g}  & =-i\frac{\hbar\Omega}{2}\left(  e^{i\omega t}\right)
+c_{e}%
+\end{align*}%
+\begin{align}
+\partial_{t}c_{g} &  =-i\frac{\Omega}{2}\tilde{c}_{e}\\
+\partial_{t}c_{e} &  =i\Delta\tilde{c}_{e}-i\frac{\Omega}{2}c_{g}\nonumber
+\end{align}
+
+
+\bigskip
+
+\bigskip$\omega-\omega_{0}=\Delta$失谐量。
+
+\bigskip 关于进动lamer频率，一个很好的解释。请点击查看：
+
+https://www.zhihu.com/question/47263532/answer/106311667
+
+
+\end{document}
